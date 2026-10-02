@@ -2,6 +2,8 @@
 
 Sistem absensi online berbasis CodeIgniter 4, QR dinamis 30 detik, GPS multi-kantor, dashboard, laporan Excel/PDF, dan audit log. Dokumentasi lengkap dimulai di [docs/README.md](docs/README.md).
 
+Untuk publish **demo tampilan tanpa database** di Vercel, ikuti [panduan demo](docs/VERCEL_DEMO.md). Konfigurasi Vercel hanya mempublish folder `demo/`; aplikasi PHP tetap dapat dijalankan secara lokal.
+
 ```bash
 composer install
 php spark serve
