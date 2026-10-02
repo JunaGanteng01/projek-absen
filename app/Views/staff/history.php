@@ -1,0 +1,4 @@
+<?= $this->extend('layouts/main') ?><?= $this->section('content') ?>
+<div class="page-heading"><div class="eyebrow">PERSONAL RECORD</div><h1>Riwayat Absensi</h1><p>Rekam jejak kehadiran, tipe kerja, dan waktu pulang Anda.</p></div>
+<div class="card dash-card-interactive"><div class="table-responsive"><table class="table mb-0"><thead><tr><th>Tanggal</th><th>Masuk</th><th>Tipe Kerja</th><th>Status Hadir</th><th>Pulang</th><th>Status Pulang</th></tr></thead><tbody><?php foreach($rows as $r): ?><tr><td><?= esc($r['attendance_date']) ?></td><td><?= esc($r['check_in']?:'-') ?></td><td><?= esc($r['work_type']?:'-') ?></td><td><?= esc($r['check_in_status']?:'-') ?></td><td><?= esc($r['check_out']?:'-') ?></td><td><?= esc($r['check_out_status']?:'-') ?></td></tr><?php endforeach ?></tbody></table></div></div><div class="mt-4"><?= $pager->links() ?></div>
+<?= $this->endSection() ?>
